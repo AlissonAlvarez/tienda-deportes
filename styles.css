@@ -210,6 +210,229 @@ nav li:first-child {
     .tarjeta button:hover {
     background-color: #3366ff;
   }
+
+  /* *SECCIÓN NOSOTROS*/
+  .seccionNosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .nosotrosSeccionImagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seccionImagenDerecha h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-family: var(--title-font);
+    font-size: 64px;
+  }
+
+  .seccionImagenIzquierda img {
+    margin-top: 4%;
+    width: 50vw;
+  }
+
+  .seccionInformacionArriba {
+    width: 100%;
+    display: flex;
+    display: row;
+    align-items: start;
+    margin-top: 5%;
+    font-family: var(--title-font);
+    font-size: 64px;
+  }
+
+  .seccionInformacionArriba h3 {
+    width: 40%;
+    margin-left: 2%;
+    font-family: var(--title-font);
+    font-size: 48px;
+  }
+
+  .seccionInformacionArriba p {
+    width: 70%;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .seccionInformacionAbajo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    margin-top: 3%;
+  }
+
+  .seccionInformacionAbajo article {
+    margin-left: 1%;
+    text-align: center;
+  }
+
+  .seccionInformacionAbajo img {
+    width: 10rem;
+    flex-direction: row;
+  }
+
+  .seccionInformacionAbajo h3 {
+    margin-top: 2%;
+    text-align: center;
+  }
+  /* *SECCIÓN FORMULARIO*/
+
+  .marcaTienda {
+    width: 100%;
+    height: 100%;
+  }
+
+  .marcaDeporte {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contactoTarjeta h3 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contactoTarjeta a {
+    margin-left: 46%;
+    border-radius: 0.3rem;
+    background-color: var(--color-Quaternary);
+    color: var(--color-Sextary);
+  }
+
+  .seccionContacto {
+    min-height: 80vh;
+  }
+
+  .contactoFormulario h2 {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contactoFormulario p {
+    width: 80%;
+    padding: 1rem;
+    margin-left: 10rem;
+    background-color: var(--color-Secondary);
+    font-size: 1.2rem;
+  }
+
+  .tiendaDeporte {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    margin-top: 2rem;
+    margin-left: rem;
+  }
+
+  .sectionDeporte {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+  }
+
+  .datoDeporte {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .datoDeporte input {
+    width: 22rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 173%;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 5px var(--color-Sextary);
+  }
+
+  .datoButtom {
+    max-height: 40%;
+    padding: 1rem;
+  }
+
+  textarea {
+    width: 48.5%;
+    height: 10rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 45.5%;
+    padding: 1rem;
+  }
+
+  .datoButtom button {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 63%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-Sextary);
+    background-color: var(--color-Secondary);
+    color: var(--color-Sextenary);
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--color-Quinary);
+    color: var(--color-Primary);
+  }
+
+  /* *CARRUSEL */
+
+  .contenedorCarrusel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3);
+  }
+
+  article {
+    width: 80%;
+    padding: 0 0px;
+  }
+
+  .siguiente,
+  .anterior {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-Sextary);
+    color: var(--color-Sextenary);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .siguiente {
+    margin-top: 4rem;
+    right: 0;
+    border-radius: 0.5rem;
+  }
+
+  .anterior {
+    margin-top: 4rem;
+    left: 0;
+    border-radius: 0.5rem;
+  }
+}
 }
 
 /* Media query para movil */
@@ -318,6 +541,84 @@ h2 {
 .cuerpo img{
   width: 70%;
   height: 300px;
+}
+/* *SECCIÓN NOSOTROS*/
+
+.seccionNosotros {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.nosotrosSeccionImagen {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nosotrosSeccionInformacion {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+/* *SECCIÓN CONTACTO*/
+
+
+/* *CONTENIDO */
+.contenidoContenedor {
+  width: 100%;
+}
+
+/* *SECCIÓN NOSOTROS*/
+
+.seccionNosotros {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.nosotrosSeccionImagen {
+  width: 170vw;
+}
+
+.seccionImagenDerecha .seccionImagenIzquierda .seccionInformacionArriba .seccionInformacionAbajo {
+  margin-top: 5%;
+  width: 100vw;
+}
+
+h2 {
+  font-size: 64px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.seccionImagenIzquierda img {
+  padding: 5% 3% 5% 3%;
+  width: 50rem;
+}
+
+.nosotrosSeccionInformacion {
+  margin-top: 5%;
+  width: 100vw;
+}
+
+
+.nosotrosSeccionInformacion{
+  display: flex;
+  flex-direction: row;    
+}
+
+.seccionInformacionArriba p{
+  
+  
+}
+
+/* *SECCIÓN CONTACTO*/
 }
 
 }
