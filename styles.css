@@ -433,8 +433,6 @@ nav li:first-child {
     border-radius: 0.5rem;
   }
 }
-}
-
 /* Media query para movil */
 @media screen and (max-width: 800px) {
 
