@@ -284,12 +284,76 @@
         </div>
       </section>
     </section>
-  
-    
+    <section class="contenedor-cuerpo">
+      <section class="contenido-cuerpo">
+          <h2>Conoce nuestros productos y servicios</h2>
+          <div class="tarjeta">
+              <div class="titulo" type="text" id="producto">camisa</div>
+              <div class="cuerpo">
+              <img src="https://static.nike.com/a/images/t_default/nvlj32m25efwn2hded8f/playera-cropped-con-logotipo-sportswear-essential-Zj6BQs.png" alt="muestra">
+                 <p type="number" id="precio">20000</p>
+              </div>
+              <div class="pie">
+                  <button onclick="agregarProducto()">Comprar</button>
+              </div>
+          </div>
+
+          <div class="tarjeta">
+              <div class="titulo" type="text" id="producto">pantalon</div>
+              <div class="cuerpo">
+              <img src="https://static.nike.com/a/images/t_default/nvlj32m25efwn2hded8f/playera-cropped-con-logotipo-sportswear-essential-Zj6BQs.png" alt="muestra">
+              <p type="number" id="precio">40000</p>
+              </div>
+              <div class="pie">
+                  <button onclick="agregarProducto()">Comprar</button>
+              </div>
+          </div>
+
+          <div class="tarjeta">
+              <div class="titulo" type="text" id="producto">zapato</div>
+              <div class="cuerpo">
+              <img src="https://static.nike.com/a/images/t_default/nvlj32m25efwn2hded8f/playera-cropped-con-logotipo-sportswear-essential-Zj6BQs.png" alt="muestra">
+              <p type="number" id="precio">30000</p>
+              </div>
+              <div class="pie">
+                  <button onclick="agregarProducto()">Comprar</button>
+              </div>
+          </div>
+
+      </section>
+  </section>
+
+  <section class="contenedor-carrito">
+      <section class="contenido-carrito">
+          <h2>Carrito de compras</h2>
+          <table class="carrito-table">
+              <thead class="columnas">
+                  <tr>
+                      <th>Producto</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>
+                      <th>Subtotal</th>
+                      <th>Eliminar</th>
+                  </tr>
+              </thead>
+              <tbody id="carrito-body">
+
+              </tbody>
+          </table>
+      </section>
+  </section>
+
+  <section class="contenedor-total">
+      <section class="contenido-total">
+          <h1>El total de la compra es: <span id="total"></span></h1>
+
+      </section>
+  </section>
+
 
 
   <footer>
-    <p>@creador por:</p>
+    <p>@creador por: Grupo 5</p>
   </footer>
   <script src="app.js"></script>
 </body>
