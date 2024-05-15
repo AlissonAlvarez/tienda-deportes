@@ -1,0 +1,324 @@
+/* *FORMATEAR PAGINA */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* *VARIABLES */
+:root {
+  --font-color: #ac4949;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(149, 119, 119, 0.127);
+}
+footer{
+  background-color: antiquewhite;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query para escritorio */
+@media screen and (max-width: 1920px) {
+
+/* estilo barra navegacion */
+nav {
+    background-color: #f2f2f2;
+    color: #355070;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    text-transform:capitalize;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #355070;
+}
+nav a:hover {
+    color: #B56576;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+
+.barraLateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #f2f2f2;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.boton-menu {
+    display: none;
+}
+
+/* Estilo banner */
+
+  .banner{
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: solid;
+  }
+  .contenido1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height:700px;
+    gap: 10px;  
+  }
+  .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+  .texto h1{
+    color: black;
+    font-size: 50px;
+  }
+  .texto p{
+    color: black;
+    font-size: 30px;
+  }
+  .botones{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 50px;
+    height: 50px;
+  }
+  .boton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #6D597A;
+    border: none;
+    box-shadow: 0 0 12px 0 ;
+  }
+  .imgPortada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .img1{
+    width: 45%;
+    height: 550px;
+    border-radius: 41px;
+    background-color: #6D597A;
+    box-shadow: 0 0 12px 0 ;
+  }
+
+  /* productos */
+   .contenido-productos{
+      margin-bottom: 10%;
+      display: flex;
+      justify-content: start;
+      gap: 10px;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: var(--font-color);
+    font-size: 30px;
+    width: 100%;
+  }
+  .productos{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 10px;
+  }
+
+  /* ESTILOS PARA LAS CARDS */
+
+  .tarjeta{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width: 50%; 
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  
+  }
+  .titulo{
+    text-align: center;
+    font-size: 24px;
+    gap: 10px;
+  }
+  .cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  .pie{
+  
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+  }
+  /* ESTILOS BOTON */
+  
+    .tarjeta button {
+    cursor: pointer;
+    background-color: #6699ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.6s;
+  }
+  /* Cambio de color al pasar el cursor */
+    .tarjeta button:hover {
+    background-color: #3366ff;
+  }
+}
+
+/* Media query para movil */
+@media screen and (max-width: 800px) {
+
+  .navegacionMovil {
+    display: none;
+}
+.boton-menu {
+    display: block;
+}
+
+.banner{
+  display:flex;   
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contenido1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  gap: 10px;
+}
+.texto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+.texto h1{
+  color: black;
+  font-size: 32px;
+}
+.texto p{
+  color: black;
+  font-size: 20px;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  gap: 50px;
+  height: 50px;
+ 
+}
+.imgPortada{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.img1{
+  width: 70%;
+  height: 300px;
+  border-radius: 41px;
+}
+
+/* productos */
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: var(--font-color);
+  font-size: 16px;
+}
+
+.productos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #ac4949 solid;
+}
+
+.contenido-productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20%;
+  gap: 15px;
+}
+/* Estilo para las cars para movil */
+
+.tarjeta{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  width:auto;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  gap: 10px;
+}
+
+.cuerpo{
+  width: 70%;
+  height: 200px;
+  border: solid;
+}
+.cuerpo img{
+  width: 70%;
+  height: 300px;
+}
+
+}
+
