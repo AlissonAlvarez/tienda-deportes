@@ -31,9 +31,9 @@ nav {
     color: #355070;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     text-transform:capitalize;
-    position: fixed;
+    /* position: fixed;
     z-index:100;
-    width: 100%;
+    width: 100%; */
 }
 nav ul {
     width: 100%;
