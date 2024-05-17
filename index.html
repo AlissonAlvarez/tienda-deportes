@@ -1,350 +1,350 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deportes</title>
-  <link rel="stylesheet" href="/styles.css">
-  
+  <link rel="stylesheet" href="./styles.css">  
 </head>
+
 <body>
   <header>
-  <nav>
-    <div>
-      <ul class="barraLateral">
-          <li onclick=ocultarBarraLateral()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <nav>
+      <div>
+        <ul class="barraLateral">
+          <li onclick=ocultarBarraLateral()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg></a></li>
           <li><a href="#inicio"><img src="logo/logo negro.png" width="60"></a></li>
           <li><a href="#inicio">inicio</a></li>
           <li><a href="#nosotros">nosotros</a></li>
           <li><a href="#productos">productos</a></li>
-          <li><a href="#carrito"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a></li>            </ul>
-      <ul>
+          <li><a href="#carrito"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#5f6368">
+                <path
+                  d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+              </svg></a></li>
+        </ul>
+        <ul>
           <li><a href="#inicio"><img src="logo/logo negro.png" width="70"></a></li>
           <li class="navegacionMovil"><a href="#inicio">inicio</a></li>
           <li class="navegacionMovil"><a href="#nosotros">nosotros</a></li>
           <li class="navegacionMovil"><a href="#productos">productos</a></li>
-          <li class="navegacionMovil"><a href="#carrito-body"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a></li>
-          <li class="boton-menu" onclick=mostrarBarraLateral()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-      </ul>
-  </div>
-  </nav>
+          <li class="navegacionMovil"><a href="#carrito-body"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path
+                  d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+              </svg></a></li>
+          <li class="boton-menu" onclick=mostrarBarraLateral()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <section class="banner" id="inicio">
-   
-    <div class="contenido1">
-      <div class="texto">
-      <h1>Reinas del Deporte Inspiración Femenina en Acción</h1>
-      <p>Con FORCE celebra la determinación y el coraje junto a las mujeres que desafían los limites</p>
+  <main class="contenidoContenedor">
+
+    <section class="banner" id="inicio">
+
+      <div class="contenido1">
+        <div class="texto">
+          <h1>Reinas del Deporte Inspiración Femenina en Acción</h1>
+          <p>Con FORCE celebra la determinación y el coraje junto a las mujeres que desafían los limites</p>
+        </div>
+        <div class="botones">
+          <button class="boton1" onclick="">Nuestos Productos</button>
+          <button class="boton1" onclick="">¿Quienes Somos?</button>
+        </div>
       </div>
-      <div class="botones">
-      <button class="boton1" onclick="">Nuestos Productos</button>
-      <button class="boton1" onclick="">¿Quienes Somos?</button>
+
+      <div class="imgPortada">
+        <img class="img1" src="/img/empoderamiento.png" alt="Mujeres empoderadas">
       </div>
-    </div>
+    </section>
 
-    <div class="imgPortada">
-      <img class="img1" src="/img/empoderamiento.png" alt="Mujeres empoderadas">
-    </div>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <section class="seccionNosotros" id="nosotros">
 
+      <div class="nosotrosSeccionImagen">
 
-  <h2>Conoce nuestros productos y servicios</h2>
-  <section class="productos" id="productos">
+        <div class="seccionImagenDerecha">
+          <h1>Tienda deportiva de Mujeres</h1>
+        </div>
+
+        <div class="seccionImagenIzquierda">
+          <img src="./images/nosotrosImagen.png" alt="" />
+        </div>
+
+      </div>
+
+      <div class="nosotrosSeccionInformacion">
+        <div class="seccionInformacionArriba">
+          <h2>Acerca de nosotros</h2>
+          <p>
+            Descubre una nueva era en el mundo del deporte femenino en Sport
+            Women. Encuentra la combinación perfecta de estilo y rendimiento
+            con nuestra exclusiva selección de ropa, calzado y accesorios
+            diseñados para mujeres activas como tú. <br /><br />Desde yoga
+            hasta running y entrenamiento en el gimnasio, estamos aquí para
+            ayudarte a destacar en cada paso de tu camino. ¡Únete a nuestra
+            comunidad hoy y haz que cada movimiento cuente!
+          </p>
+        </div>
+
+        <div class="contenedorCarrusel">
+
+          <div class="carrusel">
+
+            <div class="seccionInformacionAbajo">
+
+              <article>
+                <img src="./images/logo-adidas.png" alt="">
+                <h2>Adidas</h2>
+              </article>
+              <article>
+                <img src="./images/logo-ascics.png" alt="">
+                <h2>Oasis</h2>
+              </article>
+              <article>
+                <img src="./images/logo-chiruca.png" alt="">
+                <h2>Chiruca</h2>
+              </article>
+              <article>
+                <img src="./images/logo-converse.png" alt="">
+                <h2>Converse</h2>
+              </article>
+              <article>
+                <img src="./images/logo-joma.png" alt="">
+                <h2>Joma</h2>
+              </article>
+              <article>
+                <img src="./images/logo-newbalance.png" alt="">
+                <h2>New Balance</h2>
+              </article>
+              <article>
+                <img src="./images/logo-nike.png" alt="">
+                <h2>Nike</h2>
+              </article>
+              <article>
+                <img src="./images/logo-puma.png" alt="">
+                <h2>Puma</h2>
+              </article>
+              <article>
+                <img src="./images/logo-reebok.png" alt="">
+                <h2>Reebok</h2>
+              </article>
+              <article>
+                <img src="./images/logo-skechers.png" alt="">
+                <h2>skechers</h2>
+              </article>
+              <article>
+                <img src="./images/logo-timberland.png" alt="">
+                <h2>Timberland</h2>
+              </article>
+              <article>
+                <img src="./images/logo-url.png" alt="">
+                <h2>Url</h2>
+              </article>
+            </div>
+
+          </div>
+
+          <button class="siguiente">&#8250;</button>
+
+          <button class="anterior">&#8249;</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="productos" id="productos">
+      <h2>Conoce nuestros productos y servicios</h2>
       <section class="contenido-productos">
-      <div class="tarjeta">
-        <div class="titulo" type="text" id="producto">Pesas</div>
-        <div class="cuerpo">
-        <img src="/img/mancuerna.png" alt="muestra">
-        <p type="number" id="precio">40000</p>
-        </div>
+        <div class="tarjeta">
+          <div class="titulo" type="text" id="producto">Pesas</div>
+          <div class="cuerpo">
+            <img src="/img/mancuerna.png" alt="muestra">
+            <p type="number" id="precio">40000</p>
+          </div>
           <div class="pie">
             <button onclick="agregarProducto()">Comprar</button>
           </div>
-      </div>
+        </div>
 
-      <div class="tarjeta">
-        <div class="titulo" type="text" id="producto">Camisas</div>
-        <div class="cuerpo">
-        <img src="/img/camisa.png" alt="muestra">
+        <div class="tarjeta">
+          <div class="titulo" type="text" id="producto">Camisas</div>
+          <div class="cuerpo">
+            <img src="/img/camisa.png" alt="muestra">
             <p type="number" id="precio">50000</p>
-        </div>
-        
+          </div>
+
           <div class="pie">
             <button onclick="agregarProducto()">Comprar</button>
+          </div>
         </div>
-      </div>
 
-      <div class="tarjeta">
-        <div class="titulo" type="text" id="producto">Pantalones</div>
-        <div class="cuerpo">
-          <img src="/img/pantalon.png" alt="muestra">
-          <p type="number" id="precio">35000</p>
-        </div>
-        <div class="pie">
+        <div class="tarjeta">
+          <div class="titulo" type="text" id="producto">Pantalones</div>
+          <div class="cuerpo">
+            <img src="/img/pantalon.png" alt="muestra">
+            <p type="number" id="precio">35000</p>
+          </div>
+          <div class="pie">
             <button onclick="agregarProducto()">Comprar</button>
+          </div>
         </div>
-      </div>
 
-      <div class="tarjeta">
-        <div class="titulo" type="text" id="producto">Zapatos</div>
-        <div class="cuerpo">
-          <img src="/img/zapato.png" alt="muestra">
-          <p type="number" id="precio">200000</p>
-        </div>
-        <div class="pie">
+        <div class="tarjeta">
+          <div class="titulo" type="text" id="producto">Zapatos</div>
+          <div class="cuerpo">
+            <img src="/img/zapato.png" alt="muestra">
+            <p type="number" id="precio">200000</p>
+          </div>
+          <div class="pie">
             <button onclick="agregarProducto()">Comprar</button>
-        </div>
-      </div>
-      </section>
-  </section>
-
-    <section class="contenidoContenedor">
-      <section class="seccionInicio" id="inicio"></section>
-
-      <section class="seccionNosotros" id="nosotros">
-        
-        <div class="nosotrosSeccionImagen">
-
-          <div class="seccionImagenDerecha">
-            <h2>Tienda deportiva de Mujeres</h2>
-          </div>
-
-          <div class="seccionImagenIzquierda">
-            <img src="./images/nosotrosImagen.png" alt="" />
-          </div>
-          
-        </div>
-
-        <div class="nosotrosSeccionInformacion" id="nosotros">
-          <div class="seccionInformacionArriba">
-            <h3>Acerca de nosotros</h3>
-            <p>
-              Descubre una nueva era en el mundo del deporte femenino en Sport
-              Women. Encuentra la combinación perfecta de estilo y rendimiento
-              con nuestra exclusiva selección de ropa, calzado y accesorios
-              diseñados para mujeres activas como tú. <br /><br />Desde yoga
-              hasta running y entrenamiento en el gimnasio, estamos aquí para
-              ayudarte a destacar en cada paso de tu camino. ¡Únete a nuestra
-              comunidad hoy y haz que cada movimiento cuente!
-            </p>
-          </div>
-
-          <div class="contenedorCarrusel">
-            
-            <div class="carrusel">
-
-              <div class="seccionInformacionAbajo">
-                
-                <article>
-                  <img src="./images/logo-adidas.png" alt="">
-                  <h3>Adidas</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-ascics.png" alt="">
-                  <h3>Oasis</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-chiruca.png" alt="">
-                  <h3>Chiruca</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-converse.png" alt="">
-                  <h3>Converse</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-joma.png" alt="">
-                  <h3>Joma</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-newbalance.png" alt="">
-                  <h3>New Balance</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-nike.png" alt="">
-                  <h3>Nike</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-puma.png" alt="">
-                  <h3>Puma</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-reebok.png" alt="">
-                  <h3>Reebok</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-skechers.png" alt="">
-                  <h3>skechers</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-timberland.png" alt="">
-                  <h3>Timberland</h3>
-                </article>
-                <article>
-                  <img src="./images/logo-url.png" alt="">
-                  <h3>Url</h3>
-                </article>
-              </div>
-
-            </div>
-
-            <button class="siguiente">&#8250;</button>
-
-            <button class="anterior">&#8249;</button>
-
-          </div>
-          
-        </div>
-
-      </section>
-
-      <section class="seccionProductos" id="productos"></section>
-
-      <section class="seccionCarrito" id="carrito"></section>
-
-      <section class="seccionPromociones" id="promociones"></section>
-
-      <section class="seccionContacto" id="contacto">
-        <div class="contenedorContacto">
-          <div class="contactoSeccionImagen">
-            <img src="" alt="" />
-          </div>
-
-          <div class="marcaTienda">
-
-            <div class="marcaDeporte">
-
-            </div>
-
-            <div class="marcaDeporte">
-
-            </div>
-
-            <div class="marcaDeporte">
-
-            </div>
-
-            <div class="marcaDeporte">
-
-            </div>
-
-          </div>
-
-          <div class="contactoSeccionFormulario">
-            <div class="contactoTarjeta">
-              <img src="" alt="" />
-              <h3>¿Listo para empezar? ¡Contáctanos!</h3>
-              <a href="#">+310 123 45 67</a>
-            </div>
-
-            <img src="" alt="" />
-
-            <div class="contactoFormulario">
-              <h2>!Quieres entrenar, pero te sientes desmotivada!</h2>
-              <p>
-                Explora nuestra tienda deportiva, un espacio diseñado para
-                nutrir tu pasión por el ejercicio y el bienestar. Dentro de
-                nuestras estanterías virtuales, encontrarás una diversidad de
-                productos cuidadosamente seleccionados para inspirarte cada
-                día. Desde equipos de entrenamiento de última generación hasta
-                accesorios que complementan tu rutina, estamos comprometidos a
-                brindarte todo lo que necesitas para alcanzar tus metas
-                fitness. Sumérgete en un mundo donde la vitalidad y el impulso
-                se entrelazan, y descubre cómo cada artículo te motiva a
-                alcanzar tu máximo potencial, renovando tu energía y
-                revitalizando tu enfoque hacia una vida activa y saludable.
-                ¡Juntas, lograremos grandes cosas!"
-              </p>
-
-              <img src="images/tienda_deporte.png" class="tiendaDeporte" alt="tienda">
-
-              <form action="#">
-                <div class="sectionDeporte">
-                  <div class="datoDeporte">
-                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required />
-                  </div>
-
-                  <div class="datoDeporte">
-                    <input type="text" name="apellido" class="form-control" placeholder="Apellido " required />
-                  </div>
-                </div>
-
-                <div class="sectionDeporte">
-                  <div class="datoDeporte">
-                    <input type="email" name="email" class="form-control" placeholder="Email" required />
-                  </div>
-
-                  <div class="datoDeporte">
-                    <input type="number" name="email" class="form-control" placeholder="Numbero" required />
-                  </div>
-                </div>
-                <div class="datoButtom">
-                  <div class="datoDeporte">
-                    <textarea name="message" class="form-control" placeholder="Write Message Here" required></textarea>
-                  </div>
-                  <button type="submit" class="btn">
-                    <img src="assets/icons/mail.svg" alt="" class="svg" />
-                    Enviar
-                  </button>
-                </div>
-              </form>
-            </div>
           </div>
         </div>
       </section>
     </section>
 
-  <section class="contenedor-carrito">
+    <section class="contenedor-carrito">
       <section class="contenido-carrito">
-          <h2>Carrito de compras</h2>
-          <table class="carrito-table">
-              <thead class="columnas">
-                  <tr>
-                      <th>Producto</th>
-                      <th>Precio</th>
-                      <th>Cantidad</th>
-                      <th>Subtotal</th>
-                      <th>Eliminar</th>
-                  </tr>
-              </thead>
-              <tbody id="carrito-body">
+        <h2>Carrito de compras</h2>
+        <table class="carrito-table">
+          <thead class="columnas">
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-body">
 
-              </tbody>
-          </table>
+          </tbody>
+        </table>
       </section>
-  </section>
+    </section>
 
-  <br>
-  <br>
-
-
-  <section class="contenedor-total">
+    <section class="contenedor-total">
       <section class="contenido-total">
         <h1>El total de la compra es: <span id="total"></span></h1>
       </section>
-  </section>
-
-  <section class="contenedorPromo">
-    <section class="contenidoPromo"></section>
-        <img src="img/img1.jpg" class="imgSeccionPromo">
-        <div class="promo"><h1>Promoción día de las madres</h1>
-            <p>Encuentra el regalo ideal para tu mamá. Descubre una selección de tenis, ropa y accesorios de las marcas deportivas más reconocidas, para celebrar como se lo merecen. </p>
-            <button class="verProductos"><a href="#productos"></a>
-                Ver productos
-            </button>
-        </div>
     </section>
-</section>
+
+    <section class="contenedorPromo">
+      <section class="contenidoPromo"></section>
+      <img src="img/img1.jpg" class="imgSeccionPromo">
+      <div class="promo">
+        <h1>Promoción día de las madres</h1>
+        <p>Encuentra el regalo ideal para tu mamá. Descubre una selección de tenis, ropa y accesorios de las marcas
+          deportivas más reconocidas, para celebrar como se lo merecen. </p>
+        <button class="verProductos"><a href="#productos"></a>
+          Ver productos
+        </button>
+      </div>
+    </section>
+
+    <section class="seccionContacto" id="contacto">
+      <div class="contenedorContacto">
+        <div class="contactoSeccionImagen">
+          <img src="" alt="" />
+        </div>
+
+        <div class="marcaTienda">
+
+          <div class="marcaDeporte">
+
+          </div>
+
+          <div class="marcaDeporte">
+
+          </div>
+
+          <div class="marcaDeporte">
+
+          </div>
+
+          <div class="marcaDeporte">
+
+          </div>
+
+        </div>
+
+        <div class="contactoSeccionFormulario">
+          <img src="images/tienda_deporte.png" class="tiendaDeporte" alt="tienda">
+          <div class="contactoTarjeta">
+            <h2>¿Listo para empezar? ¡Contáctanos!<br><a href="#">+310 123 45 67</a></h2>
+
+          </div>
+
+
+          <div class="contactoFormulario">
+            <h2>!Quieres entrenar, pero te sientes desmotivada!</h2>
+            <p>
+              Explora nuestra tienda deportiva, un espacio diseñado para
+              nutrir tu pasión por el ejercicio y el bienestar. Dentro de
+              nuestras estanterías virtuales, encontrarás una diversidad de
+              productos cuidadosamente seleccionados para inspirarte cada
+              día. Desde equipos de entrenamiento de última generación hasta
+              accesorios que complementan tu rutina, estamos comprometidos a
+              brindarte todo lo que necesitas para alcanzar tus metas
+              fitness. Sumérgete en un mundo donde la vitalidad y el impulso
+              se entrelazan, y descubre cómo cada artículo te motiva a
+              alcanzar tu máximo potencial, renovando tu energía y
+              revitalizando tu enfoque hacia una vida activa y saludable.
+              ¡Juntas, lograremos grandes cosas!"
+            </p>
+
+            <form action="#">
+              <div class="sectionDeporte">
+                <div class="datoDeporte">
+                  <input type="text" name="nombre" class="form-control" placeholder="Nombre" required />
+                </div>
+
+                <div class="datoDeporte">
+                  <input type="text" name="apellido" class="form-control" placeholder="Apellido " required />
+                </div>
+              </div>
+
+              <div class="sectionDeporte">
+                <div class="datoDeporte">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required />
+                </div>
+
+                <div class="datoDeporte">
+                  <input type="number" name="email" class="form-control" placeholder="Numbero" required />
+                </div>
+              </div>
+              <div class="datoButtom">
+                <div class="datoDeporte">
+                  <textarea name="message" class="form-control" placeholder="Write Message Here" required></textarea>
+                </div>
+                <button type="submit" class="btn">
+                  Enivar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>@creador por: Grupo 5</p>
   </footer>
+
   <script src="app.js"></script>
+
 </body>
+
 </html>
