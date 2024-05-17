@@ -8,7 +8,7 @@
   --color-Secondary: #6d597a;
   --color-Tertiary: #b56576;
   --color-Quaternary: #62c7e0;
-  --color-Quinary: #eaac8b;
+  --color-Quinary: #dccfe7;
   --color-Sextary: #000000;
   --color-Sextenary: #f2f2f2;
   --title-font: "Lexend", sans-serif;
@@ -29,7 +29,7 @@
 
 html body {
   width: 100%;
-  background-color: var(--color-Sextenary);
+  background-color: var(--color-Quinary);
   color: var(--color-Sextary);
   font-family: var(--body-font);
   font-weight: 400;
@@ -47,7 +47,7 @@ nav a:link {
 
 /* estilo barra navegacion */
 nav {
-  background-color: var(--color-Sextenary);
+  background-color: var(--color-Secondary);
   color: #355070;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   text-transform: capitalize;
@@ -74,7 +74,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #355070;
+  color: var(--color-Sextenary);
 }
 
 nav a:hover {
@@ -98,6 +98,10 @@ nav li:first-child {
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 4;
+}
+
+svg {
+  fill: var(--color-Sextenary) !important;
 }
 
 .boton-menu {
@@ -207,7 +211,8 @@ h1 h2 {
 /* *FOOTER */
 
 footer {
-  background-color: antiquewhite;
+  background-color: var(--color-Secondary);
+  color: var(--color-Sextenary);
   width: 100%;
   height: 90px;
   display: flex;
@@ -982,8 +987,8 @@ footer {
   }
 
   footer {
-    background-color: #333;
-    color: var(--font-color);
+    background-color: var(--color-Secondary);
+    color: var(--color-Sextenary);
     text-align: center;
     padding: 10px;
     bottom: 0;
