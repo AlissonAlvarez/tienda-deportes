@@ -7,7 +7,7 @@
   --color-Primary: #355070;
   --color-Secondary: #6d597a;
   --color-Tertiary: #b56576;
-  --color-Quaternary: #e56b6f;
+  --color-Quaternary: #62c7e0;
   --color-Quinary: #eaac8b;
   --color-Sextary: #000000;
   --color-Sextenary: #f2f2f2;
@@ -40,6 +40,70 @@ a:link {
   color: var(--color-Sextenary);
 }
 
+
+nav a:link {
+  color: var(--color-Secondary);
+}
+
+/* estilo barra navegacion */
+nav {
+  background-color: var(--color-Sextenary);
+  color: #355070;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  /* position: fixed;
+    z-index:100;
+    width: 100%; */
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #355070;
+}
+
+nav a:hover {
+  color: var(--color-Quaternary);
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.barraLateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #f2f2f2;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 4;
+}
+
+.boton-menu {
+  display: none;
+}
+
 /* *SECCIÓN NOSOTROS */
 .contenidoContenedor {
   width: 100%;
@@ -57,6 +121,7 @@ h1 h2 {
 }
 
 .seccionNosotros h1 {
+  margin-left: 5%;
   font-size: 60px;
   text-transform: uppercase;
 }
@@ -82,9 +147,21 @@ h1 h2 {
   font-weight: 200;
 }
 
+.contenedorCarrusel {
+  display: none;
+}
+
 /* *SECCIÓN CONTACTO */
 .seccionContacto {
   margin: 5% 0 5% 0;
+}
+
+.seccionContacto a {
+  font-size: 24px;
+  color: var(--color-Sextenary);
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-style: normal;
 }
 
 .contactoFormulario {
@@ -99,9 +176,9 @@ h1 h2 {
   position: absolute;
   width: 70%;
   right: 0;
-  margin-top: -16%;
+  margin-top: -20%;
   margin-right: 3%;
-  padding: 3%;
+  padding: 4%;
   border-radius: 0.5rem;
   background-color: var(--color-Secondary);
   text-align: center;
@@ -139,64 +216,12 @@ footer {
 }
 
 /* Media query para escritorio */
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1024px) {
 
-  /* estilo barra navegacion */
-  nav {
-    background-color: #f2f2f2;
-    color: #355070;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    text-transform: capitalize;
-    /* position: fixed;
-    z-index:100;
-    width: 100%; */
-  }
-
-  nav ul {
+  .contenidoContenedor {
     width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  nav li {
-    height: 50px;
-  }
-
-  nav a {
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #355070;
-  }
-
-  nav a:hover {
-    color: #B56576;
-  }
-
-  nav li:first-child {
-    margin-right: auto;
-  }
-
-  .barraLateral {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: #f2f2f2;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .boton-menu {
-    display: none;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* Estilo banner */
@@ -278,6 +303,10 @@ footer {
     gap: 10px;
   }
 
+  .contenido-productos img {
+    width: 20rem;
+  }
+
   h2 {
     display: flex;
     justify-content: center;
@@ -286,6 +315,7 @@ footer {
     color: var(--font-color);
     font-size: 30px;
     width: 100%;
+    margin-bottom: 2rem;
   }
 
   .productos {
@@ -348,7 +378,7 @@ footer {
 
   /* Cambio de color al pasar el cursor */
   .tarjeta button:hover {
-    background-color: #62c7e0;
+    background-color: var(--color-Quaternary);
   }
 
 
@@ -391,6 +421,11 @@ footer {
     /* Establece una altura máxima para la imagen */
   }
 
+  section.contenido-carrito {
+    min-height: 25vh;
+    margin-top: -10rem;
+  }
+
   .contenedor-cuerpo {
     justify-content: space-between;
     height: auto;
@@ -411,16 +446,17 @@ footer {
   }
 
   .verProductos {
-    padding: 7px;
+    padding: 1rem;
     margin: 10px;
     align-items: center;
-    background-color: #E56B6F;
+    border-radius: 0.4rem;
+    background-color: var(--color-Secondary);
     border: 0;
     color: white;
   }
 
   .verProductos:hover {
-    background-color: #6D597A;
+    background-color: var(--color-Quaternary);
     cursor: pointer;
   }
 
@@ -433,7 +469,255 @@ footer {
   }
 
   .imgSeccionPromo {
-    width: 500px;
+    width: 37vw;
+  }
+
+  /* *SECCIÓN NOSOTROS */
+  .seccionNosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .nosotrosSeccionImagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seccionImagenDerecha h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-family: var(--title-font);
+    font-size: 64px;
+  }
+
+  .seccionImagenIzquierda img,
+  .contactoSeccionFormulario img {
+    margin-top: 4%;
+    width: 50vw;
+  }
+
+  .seccionInformacionArriba {
+    width: 100%;
+    display: flex;
+    display: row;
+    align-items: start;
+    margin-top: 5%;
+    font-family: var(--title-font);
+    font-size: 64px;
+  }
+
+  .seccionInformacionArriba h2 {
+    width: 40%;
+    margin-left: 2%;
+    font-family: var(--title-font);
+    font-size: 48px;
+  }
+
+  .seccionInformacionArriba p {
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .seccionInformacionAbajo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    margin-top: 3%;
+  }
+
+  .seccionInformacionAbajo article {
+    margin-left: 1%;
+    text-align: center;
+  }
+
+  .seccionInformacionAbajo img {
+    width: 10rem;
+    flex-direction: row;
+  }
+
+  .seccionInformacionAbajo h3 {
+    margin-top: 2%;
+    text-align: center;
+  }
+
+  /* *CARRUSEL */
+
+  .contenedorCarrusel {
+    display: block;
+  }
+
+  .contenedorCarrusel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3);
+  }
+
+  article {
+    width: 80%;
+    padding: 0 0px;
+  }
+
+  .siguiente,
+  .anterior {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-Sextary);
+    color: var(--color-Sextenary);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .siguiente {
+    margin-top: 4rem;
+    right: 0;
+    border-radius: 0.5rem;
+  }
+
+  .anterior {
+    margin-top: 4rem;
+    left: 0;
+    border-radius: 0.5rem;
+  }
+
+  /* *SECCIÓN CONTACTO */
+  .marcaTienda {
+    width: 100%;
+    height: 100%;
+  }
+
+  .marcaDeporte {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contactoTarjeta h3 {
+    margin-top: -5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contactoTarjeta a {
+    margin-left: 46%;
+    border-radius: 0.3rem;
+    background-color: var(--color-Quaternary);
+    color: var(--color-Sextary);
+  }
+
+  .contactoTarjeta {
+    display: none;
+  }
+
+  .seccionContacto {
+    flex-direction: row;
+    min-height: 80vh;
+  }
+
+  .contactoFormulario h2 {
+    margin-top: -10rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contactoFormulario p {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-Secondary);
+    color: var(--color-Sextenary);
+    font-size: 1.2rem;
+  }
+
+  .contactoSeccionFormulario .tiendaDeporte {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    margin-top: 19rem;
+    margin-left: -2rem;
+  }
+
+  .contactoFormulario .sectionInput {
+    border: 1px solid var(--color-Sextary);
+    width: 50%;
+    margin-left: 44%;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .sectionDeporte {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+  }
+
+  .datoDeporte {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.4rem;
+  }
+
+  .datoDeporte input {
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px 1px var(--color-Sextary);
+  }
+
+  .datoButtom {
+    max-height: 40%;
+    padding: 1rem;
+  }
+
+  textarea {
+    width: 60%;
+    height: 10rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-left: -0.4rem;
+    padding: 1rem;
+    box-shadow: 0 0 1px 1px var(--color-Sextary);
+  }
+
+  .datoButtom button {
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 38%;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-Sextary);
+    background-color: var(--color-Secondary);
+    color: var(--color-Sextenary);
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--color-Quaternary);
+    color: var(--color-Primary);
+    transform: scale(1.1);
+    transition: .5s;
   }
 }
 
@@ -681,7 +965,6 @@ footer {
     /* Establece una altura máxima para la imagen */
   }
 
-
   /* ESTILOS BOTON */
   .tarjeta button {
     cursor: pointer;
@@ -695,7 +978,7 @@ footer {
 
   /* Cambio de color al pasar el cursor */
   .tarjeta button:hover {
-    background-color: #3366ff;
+    background-color: var(--color-Quaternary);
   }
 
   footer {
