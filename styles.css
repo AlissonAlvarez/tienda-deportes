@@ -158,7 +158,8 @@ nav li:first-child {
     width: 100%;
   }
   .productos{
-    width: auto;
+    width: 100%;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +203,7 @@ nav li:first-child {
   
     .tarjeta button {
     cursor: pointer;
-    background-color: #6699ff;
+    background-color: #6D597A;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -211,7 +212,7 @@ nav li:first-child {
   }
   /* Cambio de color al pasar el cursor */
     .tarjeta button:hover {
-    background-color: #3366ff;
+    background-color: #62c7e0;
   }
 
   /* *SECCIÓN NOSOTROS*/
@@ -437,6 +438,38 @@ nav li:first-child {
   }
 
 /* carrito */
+.carrito-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center; /* Alineación horizontal centrada */
+}
+
+.carrito-table th, .carrito-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Alineación horizontal centrada */
+}
+
+.carrito-table th {
+  background-color: #f2f2f2;
+}
+
+.carrito-table th:first-child,
+.carrito-table td:first-child {
+  border-left: none;
+}
+
+.carrito-table th:last-child,
+.carrito-table td:last-child {
+  border-right: none;
+}
+
+.carrito-table img {
+  max-width: 30px; /* Establece un ancho máximo para la imagen */
+  max-height: 30px; /* Establece una altura máxima para la imagen */
+}
+
 .contenedor-cuerpo {
     justify-content: space-between;
     height: auto;
@@ -695,7 +728,6 @@ h2 {
     width: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
     background-color: white;
 }
  

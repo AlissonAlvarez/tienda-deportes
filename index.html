@@ -47,48 +47,63 @@
       <img class="img1" src="/img/empoderamiento.png" alt="Mujeres empoderadas">
     </div>
   </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
+
+  <h2>Conoce nuestros productos y servicios</h2>
   <section class="productos" id="productos">
-    <div class="carousel"></div>
-    <h2>Conoce nuestros productos y servicios</h2>
-    <section class="contenido-productos">
-    <div class="tarjeta">
-      <div class="titulo">Pesas</div>
-      <div class="cuerpo">
-      <img src="/img/empoderamiento.png" alt="muestra">
-      <p>Empoderate</p>
-      </div>
-        <div class="pie">
-          <button>Comprar</button>
+      <section class="contenido-productos">
+      <div class="tarjeta">
+        <div class="titulo" type="text" id="producto">Pesas</div>
+        <div class="cuerpo">
+        <img src="/img/mancuerna.png" alt="muestra">
+        <p type="number" id="precio">40000</p>
         </div>
-    </div>
-
-    <div class="tarjeta">
-      <div class="titulo">Pesas</div>
-      <div class="cuerpo">
-      <img src="/img/empoderamiento.png" alt="muestra">
-          <p>Empoderate</p>
+          <div class="pie">
+            <button onclick="agregarProducto()">Comprar</button>
+          </div>
       </div>
-      
+
+      <div class="tarjeta">
+        <div class="titulo" type="text" id="producto">Camisas</div>
+        <div class="cuerpo">
+        <img src="/img/camisa.png" alt="muestra">
+            <p type="number" id="precio">50000</p>
+        </div>
+        
+          <div class="pie">
+            <button onclick="agregarProducto()">Comprar</button>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="titulo" type="text" id="producto">Pantalones</div>
+        <div class="cuerpo">
+          <img src="/img/pantalon.png" alt="muestra">
+          <p type="number" id="precio">35000</p>
+        </div>
         <div class="pie">
-          <button>Comprar</button>
+            <button onclick="agregarProducto()">Comprar</button>
+        </div>
       </div>
-    </div>
 
-    <div class="tarjeta">
-      <div class="titulo">Pesas</div>
-      <div class="cuerpo">
-        <img src="/img/empoderamiento.png" alt="muestra">
-        <p>Empoderate</p>
+      <div class="tarjeta">
+        <div class="titulo" type="text" id="producto">Zapatos</div>
+        <div class="cuerpo">
+          <img src="/img/zapato.png" alt="muestra">
+          <p type="number" id="precio">200000</p>
+        </div>
+        <div class="pie">
+            <button onclick="agregarProducto()">Comprar</button>
+        </div>
       </div>
-      <div class="pie">
-          <button>Comprar</button>
-      </div>
-    </div>
-
+      </section>
   </section>
-  </div>
-    </section>
 
     <section class="contenidoContenedor">
       <section class="seccionInicio" id="inicio"></section>
@@ -275,7 +290,7 @@
                   </div>
                   <button type="submit" class="btn">
                     <img src="assets/icons/mail.svg" alt="" class="svg" />
-                    Enivar
+                    Enviar
                   </button>
                 </div>
               </form>
@@ -284,44 +299,6 @@
         </div>
       </section>
     </section>
-    <section class="contenedor-cuerpo">
-      <section class="contenido-cuerpo">
-          <h2>Conoce nuestros productos y servicios</h2>
-          <div class="tarjeta">
-              <div class="titulo" type="text" id="producto">camisa</div>
-              <div class="cuerpo">
-              <img src="https://static.nike.com/a/images/t_default/nvlj32m25efwn2hded8f/playera-cropped-con-logotipo-sportswear-essential-Zj6BQs.png" alt="muestra">
-                 <p type="number" id="precio">20000</p>
-              </div>
-              <div class="pie">
-                  <button onclick="agregarProducto()">Comprar</button>
-              </div>
-          </div>
-
-          <div class="tarjeta">
-              <div class="titulo" type="text" id="producto">pantalon</div>
-              <div class="cuerpo">
-              <img src="https://static.nike.com/a/images/t_default/nvlj32m25efwn2hded8f/playera-cropped-con-logotipo-sportswear-essential-Zj6BQs.png" alt="muestra">
-              <p type="number" id="precio">40000</p>
-              </div>
-              <div class="pie">
-                  <button onclick="agregarProducto()">Comprar</button>
-              </div>
-          </div>
-
-          <div class="tarjeta">
-              <div class="titulo" type="text" id="producto">zapato</div>
-              <div class="cuerpo">
-              <img src="https://static.nike.com/a/images/t_default/nvlj32m25efwn2hded8f/playera-cropped-con-logotipo-sportswear-essential-Zj6BQs.png" alt="muestra">
-              <p type="number" id="precio">30000</p>
-              </div>
-              <div class="pie">
-                  <button onclick="agregarProducto()">Comprar</button>
-              </div>
-          </div>
-
-      </section>
-  </section>
 
   <section class="contenedor-carrito">
       <section class="contenido-carrito">
@@ -343,10 +320,13 @@
       </section>
   </section>
 
+  <br>
+  <br>
+
+
   <section class="contenedor-total">
       <section class="contenido-total">
-          <h1>El total de la compra es: <span id="total"></span></h1>
-
+        <h1>El total de la compra es: <span id="total"></span></h1>
       </section>
   </section>
 
